@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="Css/styles.css" />
+  <script src="js/scripts.js"></script>
+  <title>Only indies</title>
+</head>
+<body>
+  <div class="page-nav">
+    <h1><img src="img/netlify-logo-24.png" />Only Indies</h1>
+    <button id="checkout" class="button-checkout" onclick="pay()">Pagar</button>
+  </div>
+  <div class="page-content">
+    <div class="product-container">
+      <h3>Hollow Knight Silksong (Steam key)</h3>
+      <img src="img/hollowknight_slik.png" />
+      <h1>###</h1>
+      <button class="button-add">No disponible</button>
+    </div>
+
+    <div class="product-container">
+      <h3>Hollow Knight (Steam key)</h3>
+      <img src="img/hollowknight.png" />
+      <h1>$ 149.99</h1>
+      <button
+        class="button-add"
+        onclick="add('Hollow Knight (Steam key) $ 149.99', 149.99)"
+      >
+        Agregar
+      </button>
+    </div>
+
+    <div class="product-container">
+      <h3>Celeste (Steam key)</h3>
+      <img src="img/celeste.png" />
+      <!-- 
+⠀⠀⠀⠀⠀⠀⠀⠀   ⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀  ⠀⠀⠀⠀⠀⠀⠀⢀⡴⠟⠋⠉⠉⠉⠉⠙⢷⣄⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  ⠀⠀⡴⠋⠀ ⠀⠀⠀⣀⠀⠀⠀⠀⠙⣧⠀⠀⠀⠀⠀
+⠀⠀⠀⠈⠻⢶⣶⠶⠷⠾⠖⠚⠀⠀⠀⠀ ⠀⠰⡿⠃⠀⠀⠀⠀⢸⡆⠀⠀⠀⠀
+⠀⠀⠀⠀⠀ ⠀⠙⠷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠈⢻⡄⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⠃⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⢸⠁⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀ ⡏⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⣾⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣼⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡇⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢰⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀ ⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+       -->
+      <h1>$ 179.99</h1>
+      <button class="button-add" onclick="add('product-5', 179.99)">
+        Agregar
+      </button>
+    </div>
+
+    <div class="product-container">
+      <h3>Slime Rancher Deluxe Edition (Steam key)</h3>
+      <img src="img/SlimeRancherDeluxe.png" />
+      <h1>$ 295.97</h1>
+      <button class="button-add" onclick="add('product-5', 295.97)">
+        Agregar
+      </button>
+    </div>
+
+    <div class="product-container">
+      <h3>Doom 64 (Steam key)</h3>
+      <img src="img/doom.jpg" />
+      <h1>$ 89.00</h1>
+      <button class="button-add" onclick="add('product-5', 89.00)">
+        Agregar
+      </button>
+    </div>
+
+    <div class="product-container">
+      <h3>Fallout New Vegas (Steam key)</h3>
+      <img src="img/fallout_NV.jpg" />
+      <h1>$ 109.99</h1>
+      <button class="button-add" onclick="add('product-5', 109.99)">
+        Agregar
+      </button>
+    </div>
+
+    <div class="product-container">
+      <h3>Terraria (Steam key)</h3>
+      <img src="img/Terraria.png" />
+      <h1>$ 109.99</h1>
+      <button class="button-add" onclick="add('product-5', 109.99)">
+        Agregar
+      </button>
+    </div>
+
+    <div class="product-container">
+      <h3>The legend of bum-bo (Steam key)</h3>
+      <img src="img/thelegenofbumbo.png" />
+      <h1>$ 149.99</h1>
+      <button class="button-add" onclick="add('product-5', 149.99)">
+        Agregar
+      </button>
+    </div>
+
+    <div class="product-container">
+      <h3>Tanuki Sunset (Steam key)</h3>
+      <img src="img/TanukiSunset.jpg" />
+      <h1>$ 154.99</h1>
+      <button class="button-add" onclick="add('product-5', 154.99)">
+        Agregar
+      </button>
+    </div>
+
+    <div class="product-container">
+      <h3>Halo: The Master Chief Collection (Steam Key)</h3>
+      <img src="img/halo_TMCC.jpg" />
+      <h1>$ 749</h1>
+      <button class="button-add" onclick="add('product-6', 749)">
+        Agregar
+      </button>
+    </div>
+
+    <div class="product-container">
+      <h3>Gears 5 (Steam key)</h3>
+      <img src="img/Gears5.jpg" />
+      <h1>$ 1,099</h1>
+      <button class="button-add" onclick="add('product-6', 1099)">
+        Agregar
+      </button>
+    </div>
+
+    <div class="product-container">
+      <h3>Xbox Core (Carbon Black)</h3>
+      <img src="img/mando_xbox_negro.png" />
+      <h1>$ 1,025.28</h1>
+      <button class="button-add" onclick="add('product-1', 102528)">
+        Agregar
+      </button>
+    </div>
+
+    <div class="product-container">
+      <h3>Xbox Core (Robot White)</h3>
+      <img src="img/mando_xbox_blanco.png" />
+      <h1>$ 1,008.78</h1>
+      <button class="button-add" onclick="add('product-5', 1008.78)">
+        Agregar
+      </button>
+    </div>
+
+    <div class="product-container">
+      <h3>PlayStation DualSense (Nova Pink)</h3>
+      <img src="img/dualsense_rosamexicano.jpg" />
+      <h1>$ 1,699</h1>
+      <button class="button-add" onclick="add('product-3', 1699)">
+        Agregar
+      </button>
+    </div>
+
+    <div class="product-container">
+      <h3>PlayStation 5 DualSense (Blanco)</h3>
+      <img src="img/dualsense_blanco.png" />
+      <h1>$ 1,486.50</h1>
+      <button class="button-add" onclick="add('product-4', 1486.50)">
+        Agregar
+      </button>
+    </div>
+  </div>
+</body>
